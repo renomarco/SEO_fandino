@@ -20,6 +20,9 @@ app.get('/index3', function(req, res){
 app.get('/login', function(req, res){
   res.sendFile(path.join(__dirname, 'views/login.html'));
 });
+app.get('/home', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/home.html'));
+});
 app.get('*', function(req, res){
   res.status(Index3).sendFile(path.join(__dirname, 'views/Index3.html'));
 });
