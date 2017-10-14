@@ -24,7 +24,7 @@ app.get('/index', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 app.get('/index1', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/index.html'));
+  res.sendFile(path.join(__dirname, 'views/index1.html'));
 });
 app.get('/page2', function(req, res){
   res.sendFile(path.join(__dirname, 'views/page2.html'));
