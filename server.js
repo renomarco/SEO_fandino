@@ -23,6 +23,24 @@ app.get('/login', function(req, res){
 app.get('/index', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
+app.get('/index1', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/index.html'));
+});
+app.get('/page2', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/page2.html'));
+});
+app.get('/page3', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/page3.html'));
+});
+app.get('/page4', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/page4.html'));
+});
+app.get('/page5', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/page5.html'));
+});
+app.get('/page6', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/page6.html'));
+});
 app.get('*', function(req, res){
   res.status(Index3).sendFile(path.join(__dirname, 'views/Index3.html'));
 });
